@@ -1,0 +1,62 @@
+p
+{
+    color: black;
+    opacity: 0.8;
+}
+
+
+h1
+{
+    color: rgb(40,20,0);
+    border: 1px dotted dimgrey;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0px black;
+    width: 50%;
+    margin: 0.25em;
+    padding: 0.25em;
+}
+
+/* On travaille sur la balise body, donc sur TOUTE la page */
+body
+{
+    background-color: rgb(236,253,237); /* Le fond de la page sera de cette couleur */
+    color: rgb(100,0,50,0.8); /* Le texte de la page sera blanc le 4ème paramètre gère l'opacité*/
+    background-image: url("neige.png"); /* image trouvée sur Google images */
+    background-attachment: fixed; /* Le fond restera fixe */
+}
+
+mark
+{
+    /* La couleur de fond prend le pas sur celle de toute la page */
+    background-color: rgb(248,248,248,0.2); /* opacité fixée à 0.2 */
+    color:  rgb(0,0,255);
+}
+
+span /*pour réduire les liens hypertexte*/
+{
+    font-size: 60%;
+}
+
+table {
+  table-layout: fixed;
+  width: 50%;
+  border-collapse: collapse;
+  border: 1px solid purple;
+  font-size: 20px;
+}
+
+td{                         /* tableau langues */
+  border: 1px solid black;
+  padding: 3px;
+  font-size: 60%;
+}
+
+.centrage {                 /* position du logo - effet scrolling */
+    position: fixed;
+    top: 30px;
+    right: 100px;
+    opacity: 0.5
+    
+
+}
+

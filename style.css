@@ -1,0 +1,119 @@
+body{
+  background-color: rgb(236,253,237); /* Le fond de la page sera de cette couleur */
+  color: rgb(100,0,50,0.8); /* Le texte de la page sera blanc le 4ème paramètre gère l'opacité*/
+  background-image: url("neige.png"); /* image trouvée sur Google images - libre de droit */
+  background-attachment: fixed; /* Le fond restera fixe */
+}
+
+
+
+
+
+#bienvenue{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:rgb(81, 11, 211);
+  font-size:xx-large;
+}
+
+
+
+span{
+  font-size: medium;
+/*  justify-content: center;                /* lettres dans Bienvenue */ 
+  align-items: center;
+  color: blue;                          /* couleur du texte en italique */
+}
+
+#rebours{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+#texte{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#consigne{
+  justify-content: left;
+  height: 50%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.container {                              /* il faut créer un espace de travail */
+    position: absolute;
+    width: 500px;
+    height: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);      /* Cette indication précise à la machine qu'il y a un mouvement dont le centre de symétrie est défini */
+  }
+
+  .Lacarte {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;         /* Nous avons un mouvement tridimensionnel */
+    transition: all 4s ease;              /* prévoir un temps conséquent pour le mouvement */
+  }
+  
+  .Lacarte:hover{
+    transform: rotateY(180deg);           /* quand l'objet Lacarte est survolé par le curseur, il y aura action */
+  }
+
+  img {                                   /* dimension de la photo de présentation */
+    width: 40%;
+    height: auto;
+  }
+  .devant {                               /* Recto de la carte */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;          /* on demande que le côté de la carte soit cachée par rapport à l'autre */
+    background: #d6b317;
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif;
+
+    border-radius: 20px;                   /* Avec les bords arrondis */
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  
+  .derriere {                               /* Verso de la carte */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;            /* Comme le recto, on demande pour le verso que le côté de la carte soit caché par rapport à l'autre */
+    background: #f5f1f5;
+    color: #803018;
+    transform: rotateY(180deg);             /* quelle est l'action au survol de la souris sur la carte ? */
+    border-radius: 20px;
+    
+  }
+
+  span{                           /* NOUVEL AJOUT */
+    text-decoration: underline;
+    color:#803018;
+    font-style: italic;
+  }
+
+ 
+
+  footer {                                  /* On cherche à garder le logo derrière la carte, de façon à ne la voir qu'au oment du mouvement */
+    width: 200%;
+    height: auto;
+  }

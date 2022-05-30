@@ -10,8 +10,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 50%;
-        font-size: 50%;
+        font-size: 90%;
         font-weight: bold;
     }
 }

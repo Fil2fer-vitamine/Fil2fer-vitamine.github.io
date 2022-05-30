@@ -1,0 +1,17 @@
+@media screen and (max-width: 1280px)
+{
+    #bienvenue
+    {
+        font-size:xx-small;
+    }
+
+    #rebours
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        font-size: 50%;
+        font-weight: bold;
+    }
+}

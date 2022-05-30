@@ -65,11 +65,11 @@ span{
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;         /* Nous avons un mouvement tridimensionnel */
-    transition: all 4s ease;              /* prévoir un temps conséquent pour le mouvement */
+    transition: all 5s ease;              /* prévoir un temps conséquent pour le mouvement */
   }
   
   .Lacarte:hover{
-    transform: rotateY(180deg);           /* quand l'objet Lacarte est survolé par le curseur, il y aura action */
+    transform: rotateX(180deg);           /* quand l'objet Lacarte est survolé par le curseur, il y aura action */
   }
 
   img {                                   /* dimension de la photo de présentation */
@@ -100,7 +100,7 @@ span{
     backface-visibility: hidden;            /* Comme le recto, on demande pour le verso que le côté de la carte soit caché par rapport à l'autre */
     background: #f5f1f5;
     color: #803018;
-    transform: rotateY(180deg);             /* quelle est l'action au survol de la souris sur la carte ? */
+    transform: rotateX(180deg);             /* quelle est l'action au survol de la souris sur la carte ? */
     border-radius: 20px;
     
   }

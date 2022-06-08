@@ -36,7 +36,9 @@ span{
 }
 
 #texte{
-  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
   /*justify-content: center;    je cherchais à centrer le texte par rapport à la page : ça ne doit pas être comme ça.
   align-items: center;*/
   height: 50%;

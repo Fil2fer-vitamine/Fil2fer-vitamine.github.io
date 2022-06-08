@@ -35,6 +35,12 @@ span{
   font-weight: bold;
 }
 
+#rebours:hover {
+  color:#b4790a;
+}
+
+
+
 #texte{
   margin-left: auto;
   margin-right: auto;

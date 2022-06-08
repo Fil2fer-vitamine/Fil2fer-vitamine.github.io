@@ -52,6 +52,7 @@ span{
 #texte:hover {                                /* Au survol de la zone 'texte' : action de grossissement du texte */
   font-size: 40px;
   color:#b4790a;
+}
 
 
 #consigne{

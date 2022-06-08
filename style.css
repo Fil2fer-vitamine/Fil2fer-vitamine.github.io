@@ -45,7 +45,7 @@ span{
   margin-left: auto;
   margin-right: auto;
   width: auto;
-  /*justify-content: center;    je cherchais à centrer le texte par rapport à la page : ça ne doit pas être comme ça.
+  /*justify-content: center;    -> je cherchais à centrer le texte par rapport à la page : ça ne doit pas être comme ça.
   align-items: center;*/
   height: 50%;
   font-weight: bold;
@@ -74,7 +74,7 @@ span{
     height: 450px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);      /* Cette indication précise à la machine qu'il y a un mouvement dont le centre de symétrie est défini */
+    transform: translate(-50%,-50%);      /* Cette indication impose le centrage */
   }
 
   .Lacarte {
@@ -130,7 +130,7 @@ span{
 
  
 
-  footer {                                  /* On cherche à garder le logo derrière la carte, de façon à ne la voir qu'au oment du mouvement */
+  footer {                                  /* On cherche à garder le logo derrière la carte, de façon à ne la voir qu'au moment du mouvement */
     width: 200%;
     height: auto;
   }

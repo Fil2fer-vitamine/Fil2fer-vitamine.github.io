@@ -41,14 +41,14 @@ span{
 
 #texte{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   height: 50%;
   font-weight: bold;
   font-size: 18px;
-  /* top: 50%;
+  top: 50%;
   right: 50%;
-  transform: translate(-50%,-50%);      Cette indication précise un centrage */
+  transform: translate(-50%,-50%);            /* Cette indication précise un centrage */
   transition-property: font-size;             /* préparation du grossissement du texte 'attente' */
   transition-duration: 10s;                   /* grossissement */
   transition-delay: 0,1s;                     /* grossissement */

@@ -46,6 +46,9 @@ span{
   height: 50%;
   font-weight: bold;
   font-size: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);      /* Cette indication précise un centrage */
   transition-property: font-size;             /* préparation du grossissement du texte 'attente' */
   transition-duration: 10s;                   /* grossissement */
   transition-delay: 0,1s;                     /* grossissement */
@@ -68,7 +71,7 @@ span{
     height: 450px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);      /* Cette indication précise à la machine qu'il y a un mouvement dont le centre de symétrie est défini */
+    transform: translate(-50%,-50%);      /* Cette indication précise un centrage */
   }
 
   .Lacarte {

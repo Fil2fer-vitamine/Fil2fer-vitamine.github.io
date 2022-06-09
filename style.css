@@ -47,7 +47,7 @@ span{
   font-weight: bold;
   font-size: 18px;
   top: 50%;
-  left: 50%;
+  right: 50%;
   transform: translate(-50%,-50%);      /* Cette indication précise un centrage */
   transition-property: font-size;             /* préparation du grossissement du texte 'attente' */
   transition-duration: 10s;                   /* grossissement */

@@ -39,31 +39,25 @@ span{
   color:#b4790a;
 }
 
-
-
 #texte{
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-  /*justify-content: center;    -> je cherchais à centrer le texte par rapport à la page : ça ne doit pas être comme ça.
-  align-items: center;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50%;
   font-weight: bold;
   font-size: 18px;
-  transition-property: font-size;    /* préparation du grossissement du texte 'attente' */
-  transition-duration: 10s;          /* grossissement - durée */
-  transition-delay: 0,01s;           /* grossissement - La propriété CSS transition-delay indique la durée à attendre AVANT de débuter la transition qui s'applique pour un changement de propriété.*/
+  transition-property: font-size;             /* préparation du grossissement du texte 'attente' */
+  transition-duration: 10s;                   /* grossissement */
+  transition-delay: 0,1s;                     /* grossissement */
 }
 
-#texte:hover {                                /* Au survol de la zone 'texte' : action de grossissement du texte */
-  font-size: 40px;
+#texte:hover {                                /* Au survol de la zone 'texte' : action de grossissement */
+  font-size: 30px;
   color:#b4790a;
 }
 
-
 #consigne{
   justify-content: left;
-  height: 50%;
   font-size: 15px;
   font-weight: bold;
 }
@@ -74,7 +68,7 @@ span{
     height: 450px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);      /* Cette indication impose le centrage */
+    transform: translate(-50%,-50%);      /* Cette indication précise à la machine qu'il y a un mouvement dont le centre de symétrie est défini */
   }
 
   .Lacarte {
@@ -130,7 +124,15 @@ span{
 
  
 
-  footer {                                  /* On cherche à garder le logo derrière la carte, de façon à ne la voir qu'au moment du mouvement */
+  footer {                                  /* On cherche à garder le logo derrière la carte, de façon à ne la voir qu'au oment du mouvement */
     width: 200%;
     height: auto;
+  }
+
+
+  .centrage {                 /* position du logo - effet scrolling */
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    opacity: 0.5
   }

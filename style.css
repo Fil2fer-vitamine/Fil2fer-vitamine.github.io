@@ -74,7 +74,7 @@ span{
     height: 450px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);       Cette indication précise un centrage
+    transform: translate(-50%,-50%);       /* Cette indication précise un centrage */
   }
 
   .Lacarte {

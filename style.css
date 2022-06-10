@@ -40,18 +40,17 @@ span{
 }
 
 #texte{
-  display: flex;
-  /* justify-content: center;
-  align-items: center; */
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  /*justify-content: center;    je cherchais à centrer le texte par rapport à la page : ça ne doit pas être comme ça.
+  align-items: center;*/
   height: 50%;
   font-weight: bold;
   font-size: 18px;
-  top: 50%;
-  right: 50%;
-  transform: translate(-50%,-50%);            /* Cette indication précise un centrage */
-  transition-property: font-size;             /* préparation du grossissement du texte 'attente' */
-  transition-duration: 10s;                   /* grossissement */
-  transition-delay: 0,1s;                     /* grossissement */
+  transition-property: font-size;    /* préparation du grossissement du texte 'attente' */
+  transition-duration: 10s;          /* grossissement - durée */
+  transition-delay: 0,01s;           /* grossissement - La propriété CSS transition-delay indique la durée à attendre AVANT de débuter la transition qui s'applique pour un changement de propriété.*/
 }
 
 #texte:hover {                                /* Au survol de la zone 'texte' : action de grossissement */

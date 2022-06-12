@@ -27,3 +27,14 @@ var x = setInterval(function() {                                        /* Fonct
 
   
 
+// Essai de pose d'un écouteur au 12/06/2022 //
+
+window.onload = ecouteurClavier;
+
+function ecouteurClavier(){
+	document.addEventListener("keypress", messageSurToucheActive);
+}
+
+function messageSurToucheActive(){
+	alert("Clavier actif");
+}

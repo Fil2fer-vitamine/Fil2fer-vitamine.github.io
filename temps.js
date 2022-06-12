@@ -32,9 +32,9 @@ var x = setInterval(function() {                                        /* Fonct
 window.onload = ecouteurClavier;
 
 function ecouteurClavier(){
-	document.addEventListener("keypress", messageSurToucheActive);
+  document.addEventListener("keypress", messageSurToucheActive);
 }
 
 function messageSurToucheActive(){
-	alert("Clavier actif");
+  alert("Le clavier a été utilisé !!!");
 }
